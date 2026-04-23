@@ -1,20 +1,70 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donna Marie | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<div class="home">
+  <header class="hero">
+    <nav>
+      <h2 class="logo">Donna Marie</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <h1>Posts</h1>
+    <div class="hero-content">
+      <h1>Hello, I'm Donna Marie</h1>
+      <p>BSIT Student | Aspiring Web Developer | Creative Thinker</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
 
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+      I am a BSIT student who is passionate about creating websites and learning more about
+      web development, design, and technology. I enjoy building simple, clean, and useful projects.
+    </p>
+  </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <section id="projects" class="section">
+    <h2>My Projects</h2>
+    <div class="projects-container">
 
-</div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website that showcases my skills, projects, and background.</p>
+      </div>
+
+      <div class="card">
+        <h3>Online Store Website</h3>
+        <p>An e-commerce website project designed for showcasing and selling products online.</p>
+      </div>
+
+      <div class="card">
+        <h3>Bus Scheduling System</h3>
+        <p>A system project focused on managing schedules, drivers, routes, and operations efficiently.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <p>Email: youremail@example.com</p>
+    <p>Facebook: Your Facebook Name</p>
+    <p>GitHub: DelosReyesDonna</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Donna Marie. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
